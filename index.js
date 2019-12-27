@@ -1,3 +1,6 @@
+//all the titles need to be "title case", in other words, the first letter of each word is capitalized.
+//Create a new array with the new names of each tutorial that is in the proper title case formatting.
+
 const tutorials = [
   'what does the this keyword mean?',
   'What is the Contutorialuctor OO pattern?',
@@ -11,6 +14,10 @@ const tutorials = [
   'what is JSONP?'
 ];
 
-const titleCased = () => {
-  return tutorials
+function titleCased() {
+  return tutorials.map(function (tutorial) {
+    return tutorial.split(" ").map(function(word) {
+      return (word.charAt(0).toUpperCase() + word.slice(1));
+    }).join(' ');
+  });
 }
