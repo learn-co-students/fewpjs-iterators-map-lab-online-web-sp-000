@@ -9,6 +9,7 @@ const tutorials = [
   'what is the difference between == and ===?',
   'what is the difference between event capturing and bubbling?',
   'what is JSONP?'
+  /
 ];
 
 const titleCased = () => {
