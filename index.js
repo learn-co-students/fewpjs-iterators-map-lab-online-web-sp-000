@@ -17,11 +17,10 @@ var titleCased = () => {
 
 function makeTitleCase(str) {
   let wordArray = [];
-  let returnString;
+  let returnString; 
   let splitString = str.split(' ');
   splitString.forEach(element => {
     wordArray.push(element[0].toUpperCase() + element.slice(1))
   })
-  returnString = wordArray.join(' ');
-  return returnString;
+  return returnString = wordArray.join(' ')
 }
