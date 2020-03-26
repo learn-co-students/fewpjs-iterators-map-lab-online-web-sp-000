@@ -12,5 +12,12 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  return tutorials
+  return tutorials.map(function(sentence) {
+    let newSentence = sentence.split(' ') //why no let or const?
+    for(var i = 0; i < newSentence.length; i++) {
+      newSentence[i] = newSentence[i].charAt(0).toUpperCase() + newSentence[i].substring(1)
+      //first letter of each item capitalized
+    }
+    return newSentence.join(' ')
+  })
 }
