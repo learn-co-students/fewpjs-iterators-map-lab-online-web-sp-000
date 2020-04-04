@@ -21,3 +21,5 @@ function titleCased() {
   return array;
 }
 
+titleCased(tutorials);
+
