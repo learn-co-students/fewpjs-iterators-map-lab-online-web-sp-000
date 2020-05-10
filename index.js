@@ -12,7 +12,7 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  tutorials.map(function(tutorial){
+  return tutorials.map(function(tutorial){
     let words = tutorial.split(' ');
     let capWords = []
     for (const word of words) {
@@ -23,7 +23,6 @@ const titleCased = () => {
     console.log(capWords.join(' ')); //! This reads out each tutorial, cased correctly, that I want to capture with map.
     return capWords.join(' ');
     });
-   //return tutorials
 }
 
 // const titleCased = titleCasedFunction(tutorials);
