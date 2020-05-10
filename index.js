@@ -43,14 +43,3 @@ const titleCased = () => {
 //       });
 //   }
 
-// const titleCased = tutorials.map(function(tutorial){
-//   let words = tutorial.split(' ');
-//   let capWords = []
-//   for (const word of words) {
-//     const letters = word.split('');
-//     letters[0] = letters[0].toUpperCase();
-//     capWords.push(letters.join(''));
-//   }
-//   return capWords.join(' ');
-//   });
-
