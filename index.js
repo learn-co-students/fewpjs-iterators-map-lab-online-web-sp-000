@@ -12,5 +12,33 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  return tutorials
+  return tutorials.map(function(tutorial){
+    let words = tutorial.split(' ');
+    let capWords = []
+    for (const word of words) {
+      const letters = word.split('');
+      letters[0] = letters[0].toUpperCase();
+      capWords.push(letters.join(''));
+    }
+    console.log(capWords.join(' ')); //! This reads out each tutorial, cased correctly, that I want to capture with map.
+    return capWords.join(' ');
+    });
 }
+
+// const titleCased = titleCasedFunction(tutorials);
+// console.log(titleCasedFunction(tutorials));
+
+//   function titleCasedFunction(tutorials){
+//     tutorials.map(function(tutorial){
+//       let words = tutorial.split(' ');
+//       let capWords = []
+//       for (const word of words) {
+//         const letters = word.split('');
+//         letters[0] = letters[0].toUpperCase();
+//         capWords.push(letters.join(''));
+//       }
+//       console.log(capWords.join(' ')); //! This reads out each tutorial, cased correctly, that I want to capture with map.
+//       return capWords.join(' ');
+//       });
+//   }
+
