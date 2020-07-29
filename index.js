@@ -13,9 +13,9 @@ const tutorials = [
 
 function titleCased() {
   return tutorials.map(function (tutorial) {
-    tutorial = tutorial.split(' ');
+    tutorial = tutorial.split(' '); // tutorial = [what, does, the, this, keyword, mean?]
     for (var i = 0; i < tutorial.length; i++) {
-      tutorial[i] = tutorial[i].charAt(0).toUpperCase() + tutorial[i].slice(1);
+      tutorial[i] = tutorial[i].charAt(0).toUpperCase() + tutorial[i].slice(1); // go through what, then does and split etc. and fuse 
     }
     return tutorial.join(' ');
   });
