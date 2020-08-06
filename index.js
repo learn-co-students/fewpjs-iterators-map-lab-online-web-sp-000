@@ -12,5 +12,8 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  return tutorials
+  return tutorials.map(tutorial => {
+    // Split each tutorial into array of words, uppercase first letter of each word and then rejoin array of words into a string with space inbetween
+    return tutorial.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
+  })
 }
