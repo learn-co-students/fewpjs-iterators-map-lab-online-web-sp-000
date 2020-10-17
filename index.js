@@ -12,5 +12,16 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  return tutorials
+
+  function makeUpper(sTutorial){
+    let words = sTutorial.split(" ")
+    let formattedWords = []
+    for (let word of words){
+      let formattedWord = word[0].toUpperCase() + word.slice(1)
+      formattedWords.push(formattedWord)
+    }
+    return formattedWords.join(" ")
+  }
+
+  return tutorials.map(tutorial => makeUpper(tutorial))
 }
