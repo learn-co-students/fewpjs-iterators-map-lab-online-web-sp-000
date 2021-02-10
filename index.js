@@ -18,4 +18,5 @@ function titleCased() {
       tutorial[i] = tutorial[i].charAt(0).toUpperCase() + tutorial[i].slice(1);
     }
     return tutorial.join(' ');
-  })
+  });
+}
