@@ -11,6 +11,7 @@ const tutorials = [
   'what is JSONP?'
 ];
 
+// Title Case with a `For` Loop:
 
 // const titleCased = () => {
 //   return tutorials.map(function(tutorial) {
@@ -22,11 +23,22 @@ const tutorials = [
 //   });
 // }
 
+// Title Case with the `map()` Method:
+
+// const titleCased = () => {
+//   return tutorials.map(tutorial => {
+//     tutorial = tutorial.split(' ');
+//     return tutorial.map(word => {
+//       return (word.charAt(0).toUpperCase() + word.slice(1));
+//     }).join(' ');
+//   });
+// }
+
+// Title Case with the `map()` and `remove()` methods
 const titleCased = () => {
   return tutorials.map(tutorial => {
-    tutorial = tutorial.split(' ');
-    return tutorial.map(word => {
-      return (word.charAt(0).toUpperCase() + word.slice(1));
+    return tutorial.split(' ').map(word => {
+      return word.replace(word[0], word[0].toUpperCase());
     }).join(' ');
   });
 }
