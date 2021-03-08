@@ -1,5 +1,5 @@
 const tutorials = [
-  'what does the this keyword mean?',
+  'what does the this keyword Mean?',
   'What is the Contutorialuctor OO pattern?',
   'implementing Blockchain Web API',
   'The Test Driven Development Workflow',
@@ -11,6 +11,8 @@ const tutorials = [
   'what is JSONP?'
 ];
 
-const titleCased = () => {
-  return tutorials
-}
+const titleCased = () => tutorials.map(tutorial => tutorial.split(" ").map(
+   word => word[0].toUpperCase() + word.slice(1)
+).join(' ')
+  
+)
