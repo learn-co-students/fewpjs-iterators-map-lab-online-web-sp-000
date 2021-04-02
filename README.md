@@ -129,12 +129,12 @@ const robots = [
   { name: 'Baymax', modes: 1.5, isActivated: false, },
 ];
 
-const activatedRobots = robots.map(function (robot) {
+(const activatedRobots = robots.map(function (robot) {
   return Object.assign({}, robot, {
     modes: robot.modes * 2,
     isActivated: true,
   });
-});
+});)
 
 console.log(activatedRobots);
 
