@@ -12,5 +12,20 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  return tutorials
+  return tutorials.map(function (title) {
+    title = title.split(" ");
+    for (let i=0; i<title.length; i++){
+      title[i] = title[i].charAt(0).toUpperCase() + title[i].slice(1);
+    }; 
+    return title.join(" ");
+  });
 }
+
+// const mySentence = "freeCodeCamp is an awesome resource";
+// const words = mySentence.split(" ");
+
+// for (let i = 0; i < words.length; i++) {
+//     words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+// }
+
+// words.join(" ");
