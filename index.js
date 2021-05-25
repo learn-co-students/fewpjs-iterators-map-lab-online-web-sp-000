@@ -16,7 +16,7 @@ const titleCased = () => {
     let arrayOfStrings = tutorial.split(' ')
     let capitalizedArray = []
     for (const str of arrayOfStrings) {
-      capitalizedArray.push(str.toUpperCase())
+      capitalizedArray.push(str[0].toUpperCase())
     }
     return capitalizedArray.join(' ')
   })
